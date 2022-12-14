@@ -1,10 +1,4 @@
-/*
- * File: 103-fibonacci.c
- * Auth: Brennan D Baraban
- */
-
 #include <stdio.h>
-
 /**
  * main - Prints the sum of even-valued Fibonacci sequence
  *        terms not exceeding 4000000.
