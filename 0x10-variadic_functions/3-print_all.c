@@ -1,4 +1,4 @@
-nclude "variadic_functions.h"
+#include "variadic_functions.h"
 #include <stdio.h>
 #include <stdarg.h>
 
@@ -16,7 +16,7 @@ void print_all(const char * const format, ...);
 void print_char(va_list arg)
 {
 	char letter;
-	
+
 	letter = va_arg(arg, int);
 	printf("%c", letter);
 }
@@ -57,7 +57,7 @@ void print_string(va_list arg)
 	char *str;
 
 	str = va_arg(arg, char *);
-	
+
 	if (str == NULL)
 	{
 		printf("(nil)");
@@ -103,7 +103,7 @@ void print_all(const char * const format, ...)
 		}
 		i++;
 	}
-	
+
 	printf("\n");
 
 	va_end(args);
